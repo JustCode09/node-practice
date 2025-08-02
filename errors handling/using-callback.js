@@ -9,4 +9,4 @@ fs.readFile('data.txt', 'utf-8', (err,data)=>{
     console.log("File content:", data.toString());
     }
 });
-console.log("Continuing execution after file read operation.");
+console.log("Continuing execution after file read operation.")
