@@ -1,0 +1,17 @@
+html
+  head
+    title Pug Example
+    style.
+      h1 {
+        color: blue;
+      }
+
+  body
+    h1 GeeksforGeeks Pug Example
+    h4 This data is coming from server:
+    p The server sent the following data: 
+      strong= message
+
+    ul
+      each course in courses
+        li= course
