@@ -10,8 +10,17 @@
 //     expect(sum(2,3)).toBe(5);
 // })
 
-const sum = require('../sum');  
+// const sum = require('../sum');  
 
-test('retuens object ', ()=>{
-    expect(sum()).toEqual({ name: 'saurav' });
-});
+// test('retuens object ', ()=>{
+//     expect(sum()).toEqual({ name: 'saurav' });
+// });
+
+const frtchData = require('./sum');
+
+test('calls callback with hi', (done)=>{
+    frtchData((data) =>{
+        expect(data).toBe('hi');
+        done(); // Call done to indicate that the test is complete
+    })
+})
